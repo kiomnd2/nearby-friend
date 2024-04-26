@@ -1,6 +1,6 @@
-package com.example.nearbyfriend.interfaces;
+package com.example.nearbyfriend.interfaces.member;
 
-import com.example.nearbyfriend.domain.Member;
+import com.example.nearbyfriend.domain.member.Member;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;

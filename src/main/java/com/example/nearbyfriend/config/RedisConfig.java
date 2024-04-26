@@ -29,21 +29,6 @@ public class RedisConfig {
         return redisTemplate;
     }
 
-    //리스너어댑터 설정
-//    @Bean
-//    public MessageListenerAdapter messageListenerAdapter() {
-//        return new MessageListenerAdapter(new RedisSubService());
-//    }
-
-    //컨테이너 설정
-//    @Bean
-//    public RedisMessageListenerContainer redisContainer() {
-//        RedisMessageListenerContainer container = new RedisMessageListenerContainer();
-//        container.setConnectionFactory(redisConnectionFactory());
-//        container.addMessageListener(messageListenerAdapter(), topic());
-//        return container;
-//    }
-
     //pub/sub 토픽 설정
     @Bean
     public ChannelTopic topic() {

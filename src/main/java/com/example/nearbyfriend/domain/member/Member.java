@@ -1,4 +1,4 @@
-package com.example.nearbyfriend.domain;
+package com.example.nearbyfriend.domain.member;
 
 import jakarta.persistence.*;
 import lombok.Builder;

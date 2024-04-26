@@ -1,7 +1,7 @@
-package com.example.nearbyfriend.infrastructure;
+package com.example.nearbyfriend.infrastructure.location;
 
-import com.example.nearbyfriend.domain.GeoLocation;
-import com.example.nearbyfriend.domain.LocationStore;
+import com.example.nearbyfriend.domain.location.GeoLocation;
+import com.example.nearbyfriend.domain.location.LocationStore;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import lombok.RequiredArgsConstructor;
 import org.springframework.kafka.core.KafkaTemplate;

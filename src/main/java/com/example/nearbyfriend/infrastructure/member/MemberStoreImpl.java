@@ -1,7 +1,7 @@
-package com.example.nearbyfriend.infrastructure;
+package com.example.nearbyfriend.infrastructure.member;
 
-import com.example.nearbyfriend.domain.Member;
-import com.example.nearbyfriend.domain.MemberStore;
+import com.example.nearbyfriend.domain.member.Member;
+import com.example.nearbyfriend.domain.member.MemberStore;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Component;
 

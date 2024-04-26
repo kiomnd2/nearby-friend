@@ -1,6 +1,6 @@
 package com.example.nearbyfriend.infrastructure;
 
-import com.example.nearbyfriend.domain.LocationStore;
+import com.example.nearbyfriend.domain.location.LocationStore;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Component;
 import org.springframework.web.socket.*;
@@ -16,12 +16,14 @@ public class WebSocketHandler extends TextWebSocketHandler {
 
     @Override
     public void afterConnectionEstablished(WebSocketSession session) throws Exception {
-        CLIENTS.putIfAbsent(session.getId(), session);
+        String sessionId = session.getId();
+        WebSocketSession put = CLIENTS.put(sessionId, session);
+
     }
 
     @Override
     protected void handleTextMessage(WebSocketSession session, TextMessage message) throws Exception {
-        super.handleTextMessage(session, message);
+
     }
 
     @Override

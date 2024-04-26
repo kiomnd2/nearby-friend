@@ -1,4 +1,4 @@
-package com.example.nearbyfriend.domain;
+package com.example.nearbyfriend.domain.location;
 
 import java.io.IOException;
 

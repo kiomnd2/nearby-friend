@@ -1,4 +1,4 @@
-package com.example.nearbyfriend.domain;
+package com.example.nearbyfriend.domain.location;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
