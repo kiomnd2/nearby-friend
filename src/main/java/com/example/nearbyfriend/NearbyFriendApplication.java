@@ -7,9 +7,7 @@ import org.springframework.data.jpa.repository.config.EnableJpaAuditing;
 @EnableJpaAuditing
 @SpringBootApplication
 public class NearbyFriendApplication {
-
     public static void main(String[] args) {
         SpringApplication.run(NearbyFriendApplication.class, args);
     }
-
 }
