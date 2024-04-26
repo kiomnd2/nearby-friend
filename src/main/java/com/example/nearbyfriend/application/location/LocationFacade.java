@@ -26,5 +26,6 @@ public class LocationFacade {
         locationRedisRepository.addLocation(alarmLocation.getUserId(), location.toRedisStoreCommand());
 
         // member 의 친구 조회 후 알람
+
     }
 }

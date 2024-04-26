@@ -16,6 +16,7 @@ public class LocationMessageApi {
      */
     @MessageMapping("/location")
     public void subscribeFriend(LocationMessageDto.AlarmLocation alarmLocation) {
-
+        // 주기적으로 위치 알림
+        locationFacade.alarmLocation(alarmLocation);
     }
 }

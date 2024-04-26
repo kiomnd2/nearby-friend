@@ -2,6 +2,7 @@ package com.example.nearbyfriend.domain.member;
 
 import jakarta.persistence.*;
 import lombok.Builder;
+import lombok.Getter;
 import lombok.NoArgsConstructor;
 
 import java.util.ArrayList;
@@ -18,6 +19,7 @@ public class Member {
     private String userId;
     private String username;
 
+    @Getter
     @ElementCollection(fetch = FetchType.LAZY)
     private List<String> relationList = new ArrayList<>();
 
